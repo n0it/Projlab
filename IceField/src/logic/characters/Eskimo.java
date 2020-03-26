@@ -8,5 +8,6 @@ public class Eskimo extends Character {
 
 	}
 	public void ability() {
+		System.out.println("Character.ability meghívódott");
 	}
 }
