@@ -14,5 +14,5 @@ public class BackPack {
 	}
 	public int getEssentialItemNumber() {
 	}
-	public int getNumber(PlayerActions pa){ } //CSAK TESZT
+	public int getNumber(PlayerActions pa){ }
 }

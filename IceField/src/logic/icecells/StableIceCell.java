@@ -9,21 +9,22 @@ public class StableIceCell extends IceCell  {
 	private Items item;
 
 
-	public StableIceCell(){
+	public StableIceCell(){ }
 
+	private void removeItem() {
+		System.out.println("StableIceCell.removeItem meghívódott");
 	}
-
-	private void removeItem() { }
 	public void mine(Character ch) {
-
+		System.out.println("StableIceCell.mine meghívódott");
 	}
 	public boolean setIgloo(boolean b) {
-
+		System.out.println("StableIceCell.setIgloo meghívódott");
 	}
 
-	public boolean safeToStart(){ }
 	public void snowing() {
-
+		System.out.println("StableIceCell.snowing meghívódott");
 	}
 	public void accept(Character ch) {
+		System.out.println("StableIceCell.accept meghívódott");
 	}
+}

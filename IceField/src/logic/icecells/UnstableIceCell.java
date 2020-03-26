@@ -12,13 +12,14 @@ public class UnstableIceCell extends IceCell  {
 
 	}
 
-	public boolean safeToStart(){ }
 	public boolean setIgloo(boolean b) {
-
+		System.out.println("UnstableIceCell.setIgloo meghívódott");
 	}
 	public void snowing() {
-
+		System.out.println("UnstableIceCell.snowing meghívódott");
 	}
 	public void accept(Character ch) {
+		System.out.println("UnstableIceCell.accept meghívódott");
+	}
 
 }

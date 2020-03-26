@@ -23,27 +23,36 @@ public abstract class IceCell {
 	}
 
 	public boolean setCapacityKnown() {
-
+		System.out.println("IceCell.setCapacityKnown meghívódott");
 	}
 	public boolean loseSnow(boolean withShovel) {
-
+		System.out.println("IceCell.loseSnow meghívódott");
 	}
 	public void gainOneSnow() {
-
+		System.out.println("IceCell.gainOneSnow meghívódott");
 	}
 	public IceCell getNeighbour(Way w) {
-
+		System.out.println("IceCell.getNeighbour meghívódott");
 	}
 	public void addNeighbour(Way w, IceCell ic) {
-
+		System.out.println("IceCell.addNeighbour meghívódott");
 	}
-	public void removeCharacter(Character ch) {  }
-	public void addCharacter(Character ch) { }
+	public void removeCharacter(Character ch) {
+		System.out.println("IceCell.removeCharacter meghívódott");
+	}
+	public void addCharacter(Character ch) {
+		System.out.println("IceCell.addCharacter meghívódott");
+	}
 
-	public boolean movePlayerOut(Way from) { }
-	public void mine(Character actual) {}
-	public boolean setIgloo(boolean b) { }
-	public abstract boolean safeToStart();
+	public boolean movePlayerOut(Way from) {
+		System.out.println("IceCell.movePlayerOut meghívódott");
+	}
+	public void mine(Character actual) {
+		System.out.println("IceCell.mine meghívódott");
+	}
+	public boolean setIgloo(boolean b) {
+		System.out.println("IceCell.setIgloo meghívódott");
+	}
 	public abstract void accept(Character ch);
 	public abstract void snowing();
 }

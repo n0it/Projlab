@@ -20,34 +20,14 @@ public class IceField {
 	private List<List<IceCell>> field = new ArrayList<>();
 	private ArrayList<Character> characters;
 	private WinChecker wc = new WinChecker();
-    private int chosenToSave = -1;
 
-	private int[][] cellTable; //CSAK TESZT, KIKOMMENTELNI A configureCells() ELSŐ SORÁT ÉS KISZEDNI A KONSTRUKTORBÓL
-	private void drawField(){
+	private int[][] cellTable;
 
-	} //CSAK TESZT, ÉS KISZEDNI AZ INPUT FV EK VÉGÉRŐL
 
 	public IceField(){
 
 	}
 
-	//Pálya építést szolgáló fv-ek
-	private void buildCells(){
-
-	}
-	private void buildNeighbours(IceCell ic, int y, int x){
-
-	}
-	private void configureCells(int numberOfWater, int numberOfUnstable) {
-	} //VAN BENNE drawField();
-	private void putPlayersToCell() {
-
-	}
-	private void placeItem(PlayerActions pa, int y, int x, int essentialID){
-
-	}
-
-	//Pálya működését szolgáló fv-ek
 	private void snowStorm() {
 
 	}
@@ -64,7 +44,6 @@ public class IceField {
 	}
 	public static int getMaxPlayer(){  }
 
-	//Inputra reagáló fv-ek //VANNAK BENNE drawField() ek
 	public void setChosenToSave(int i){
 
 	}
