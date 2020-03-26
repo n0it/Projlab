@@ -22,73 +22,41 @@ public class IceField {
 	private WinChecker wc = new WinChecker();
     private int chosenToSave = -1;
 
-	private int[][] cellTable; //CSAK TESZT, KIKOMMENTELNI A configureCells() ELSŐ SORÁT ÉS KISZEDNI A KONSTRUKTORBÓL
-	private void drawField(){
+	public IceField(){ }
 
-	} //CSAK TESZT, ÉS KISZEDNI AZ INPUT FV EK VÉGÉRŐL
-
-	public IceField(){
-
-	}
-
-	//Pálya építést szolgáló fv-ek
-	private void buildCells(){
-
-	}
-	private void buildNeighbours(IceCell ic, int y, int x){
-
-	}
-	private void configureCells(int numberOfWater, int numberOfUnstable) {
-	} //VAN BENNE drawField();
-	private void putPlayersToCell() {
-
-	}
-	private void placeItem(PlayerActions pa, int y, int x, int essentialID){
-
-	}
-
-	//Pálya működését szolgáló fv-ek
 	private void snowStorm() {
-
+		System.out.println("IceField.snowStorm() meghívódott");
 	}
-	private void snow(int seqNum, Way to, IceCell from, boolean subRoot){
 
-	}
 	public void addIceCell(IceCell ic, IceCell removed) {
-
+		System.out.println("IceField.addIceCell() meghívódott");
 	}
-	private void gameLost() {  }
-	private void gameWon() {  }
-	private void actionHandler(){
-
+	private void gameLost() {
+		System.out.println("IceField.gameLost() meghívódott");
 	}
-	public static int getMaxPlayer(){  }
-
-	//Inputra reagáló fv-ek //VANNAK BENNE drawField() ek
-	public void setChosenToSave(int i){
-
+	private void gameWon() {
+		System.out.println("IceField.gameLost() meghívódott");
 	}
-	public Character getChosenToSave(){
 
-	}
 	public void nextPlayer() {
-
+		System.out.println("IceField.nextPlayer() meghívódott");
 	}
 	private void useEssentialItems() {
-
+		System.out.println("IceField.useEssentialItems() meghívódott");
 	}
 	public void setPlayerWay(Way w){
+		System.out.println("IceField.setPlayerWay() meghívódott");
 	}
 	public void usePlayerItem(PlayerActions pa) {
-
+		System.out.println("IceField.usePlayerItem() meghívódott");
 	}
 	public void useAbility() {
-
+		System.out.println("IceField.useAbility() meghívódott");
 	}
 	public void movePlayer(Way w) {
-
+		System.out.println("IceField.movePlayer() meghívódott");
 	}
 	public void mineActualCell() {
-
+		System.out.println("IceField.mineActualCell() meghívódott");
 	}
 }
