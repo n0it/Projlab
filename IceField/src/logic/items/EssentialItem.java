@@ -10,9 +10,9 @@ public class EssentialItem implements Items {
 	public EssentialItem(int id, WinChecker winch){ }
 
 	public void use(Character actualch) {
-		System.out.println("EssentialItem.use() meghívódott");
+		System.out.println("EssentialItem.use meghívódott");
 	}
 	public boolean equip(Character ch) {
-		System.out.println("EssentialItem.equip() meghívódott");
+		System.out.println("EssentialItem.equip meghívódott");
 	}
 }
