@@ -5,13 +5,9 @@ import logic.icecells.IceCell;
 
 public class Explorer extends Character {
 
-	public Explorer(IceCell ic){
-		super(4, ic);
+	public Explorer(){
+
 	}
 	public void ability() {
-		IceCell ic = getOwnCell().getNeighbour(getFacingWay());
 
-		if(ic != null && ic.setCapacityKnown())
-			loseOneAction();
 	}
-}
