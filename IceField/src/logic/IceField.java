@@ -1,6 +1,7 @@
 package logic;
 
 import logic.characters.Character;
+import logic.characters.Explorer;
 import logic.icecells.IceCell;
 import logic.icecells.StableIceCell;
 import logic.icecells.UnstableIceCell;
@@ -49,6 +50,9 @@ public class IceField {
 	}
 	public void usePlayerItem(PlayerActions pa) {
 		System.out.println("IceField.usePlayerItem meghívódott");
+		characters = new ArrayList<>();
+		characters.add(new Explorer());
+		characters.get(0).useItem(pa);
 	}
 	public void useAbility() {
 		System.out.println("IceField.useAbility meghívódott");

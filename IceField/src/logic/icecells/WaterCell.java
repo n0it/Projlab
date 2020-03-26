@@ -3,6 +3,7 @@ package logic.icecells;
 import logic.IceField;
 import logic.Way;
 import logic.characters.Character;
+import logic.characters.Explorer;
 
 public class WaterCell extends IceCell {
 	private boolean broken = false;
@@ -20,6 +21,10 @@ public class WaterCell extends IceCell {
 	}
 	public boolean movePlayerOut(Way from) {
 		System.out.println("WaterCell.movePlayerOut meghívódott");
+		Character other = new Explorer();
+		other.setFacingWay(w opposite);
+		other.move();
+		other.resetTurnsInWater();
 	}
 
 	public void snowing() {

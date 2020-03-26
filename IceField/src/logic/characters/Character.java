@@ -1,6 +1,7 @@
 package logic.characters;
 
 import logic.icecells.IceCell;
+import logic.icecells.StableIceCell;
 import logic.items.Items;
 import logic.items.PlayerActions;
 import logic.Way;
@@ -28,6 +29,8 @@ public abstract class Character {
 	}
 	public void dig(boolean withShovel) {
 		System.out.println("Character.dig meghívódott");
+		ownCell = new StableIceCell();
+		ownCell.loseSnow(true);
 	}
 	public void mine() {
 		System.out.println("Character.mine meghívódott");
@@ -70,6 +73,8 @@ public abstract class Character {
 	}
 	public void useItem(PlayerActions pa) {
 		System.out.println("Character.useItem meghívódott");
+		backpack = new BackPack();
+		backpack.hasItem(pa).use(this);
 	}
 	public void useEssentials() {
 		System.out.println("Character.useEssentials meghívódott");
