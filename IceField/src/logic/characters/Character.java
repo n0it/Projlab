@@ -27,23 +27,20 @@ public abstract class Character {
 
 	}
 	public void dig(boolean withShovel) {
-		if(ownCell.loseSnow(withShovel)) loseOneAction();
+
 	}
-	public void mine() { ownCell.mine(this); }
+	public void mine() {  }
 	public void gainOneHeat() {
-		if(bodyHeat != maxBodyHeat){
-			bodyHeat++;
-			loseOneAction();
-		}
+
 	}
 	public void loseOneHeat() {
-		if(bodyHeat != 0) bodyHeat--;
+
 	}
-	public void setOwnCell(IceCell ic) { ownCell = ic;}
-	public IceCell getOwnCell() { return ownCell;}
-	public void addOneTurnInWater() { turnsInWater++;}
-	public int getTurnsInWater() { return turnsInWater;}
-	public void resetTurnsInWater() { turnsInWater = 0;}
+	public void setOwnCell(IceCell ic) { }
+	public IceCell getOwnCell() { }
+	public void addOneTurnInWater() {}
+	public int getTurnsInWater() { }
+	public void resetTurnsInWater() { }
 	public boolean putItemtoBackPack() {}
 	public void wearDivingSuit() {
 
