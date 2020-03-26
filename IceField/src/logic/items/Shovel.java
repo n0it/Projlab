@@ -10,5 +10,6 @@ public class Shovel implements Items {
 	}
 	public boolean equip(Character ch) {
 		System.out.println("Shovel.equip meghívódott");
+		return false;
 	}
 }

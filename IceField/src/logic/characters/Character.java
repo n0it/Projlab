@@ -80,7 +80,7 @@ public abstract class Character {
 		System.out.println("Character.addOneTurnInWater meghívódott");
 	}
 	public int getTurnsInWater() {
-		System.out.println("Character.getTurnsInWater meghívódott");
+		System.out.println("Character.getTurnsInWater meghívódott");return 0;
 	}
 	public void resetTurnsInWater() {
 		System.out.println("Character.resetTurnsInWater meghívódott");
@@ -94,13 +94,13 @@ public abstract class Character {
 		System.out.println("Character.wearDivingSuit meghívódott");
 	}
 	public boolean getDivingSuit() {
-		System.out.println("Character.getDivingSuit meghívódott");
+		System.out.println("Character.getDivingSuit meghívódott");return false;
 	}
 	public void setFacingWay(Way w) {
 		System.out.println("Character.setFacingWay meghívódott");
 	}
 	public Way getFacingWay() {
-		System.out.println("Character.getFacingWay meghívódott");
+		System.out.println("Character.getFacingWay meghívódott");return null;
 	}
 	public void useItem(PlayerActions pa) {
 		System.out.println("Character.useItem meghívódott");
@@ -113,13 +113,13 @@ public abstract class Character {
 		e.use(this);
 	}
 	public int getBodyHeat() {
-		System.out.println("Character.getBodyHeat meghívódott");
+		System.out.println("Character.getBodyHeat meghívódott"); return 0;
 	}
 	public BackPack getBackPack(){
-		System.out.println("Character.getBackPack meghívódott");
+		System.out.println("Character.getBackPack meghívódott");return null;
 	}
 	public int getActionsLeft(){
-		System.out.println("Character.getActionsLeft meghívódott");
+		System.out.println("Character.getActionsLeft meghívódott");return 0;
 	}
 	public void resetActionsLeft(){
 		System.out.println("Character.resetActionsLeft meghívódott");

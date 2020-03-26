@@ -11,6 +11,7 @@ public class UnstableIceCell extends IceCell  {
 
 	public boolean setIgloo(boolean b) {
 		System.out.println("UnstableIceCell.setIgloo meghívódott");
+		return false;
 	}
 	public void snowing() {
 		System.out.println("UnstableIceCell.snowing meghívódott");

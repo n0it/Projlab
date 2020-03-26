@@ -5,9 +5,10 @@ import logic.icecells.IceCell;
 
 public class Explorer extends Character {
 
-	public Explorer(){
+	public Explorer() {
 
 	}
+
 	public void ability() {
 		System.out.println("Character.ability meghívódott");
 		IceCell ic = getOwnCell();
@@ -15,3 +16,4 @@ public class Explorer extends Character {
 		IceCell neighbour = ic.getNeighbour(w);
 		neighbour.setCapacityKnown();
 	}
+}

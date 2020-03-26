@@ -20,11 +20,14 @@ public class BackPack {
 	}
 	public boolean addItem(Items it, PlayerActions pa) {
 		System.out.println("BackPack.addItem meghívódott");
+		return false;
 	}
 	public Food useFood() {
 		System.out.println("BackPack.useFood meghívódott");
+		return null;
 	}
 	public int getEssentialItemNumber() {
 		System.out.println("BackPack.getEssentialItemNumber meghívódott");
+		return 0;
 	}
 }

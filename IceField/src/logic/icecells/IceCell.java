@@ -23,10 +23,11 @@ public abstract class IceCell {
 	}
 
 	public boolean setCapacityKnown() {
-		System.out.println("IceCell.setCapacityKnown meghívódott");
+		System.out.println("IceCell.setCapacityKnown meghívódott");return false;
 	}
 	public boolean loseSnow(boolean withShovel) {
 		System.out.println("IceCell.loseSnow meghívódott");
+		return false;
 	}
 	public void gainOneSnow() {
 		System.out.println("IceCell.gainOneSnow meghívódott");
@@ -47,12 +48,14 @@ public abstract class IceCell {
 
 	public boolean movePlayerOut(Way from) {
 		System.out.println("IceCell.movePlayerOut meghívódott");
+		return false;
 	}
 	public void mine(Character actual) {
 		System.out.println("IceCell.mine meghívódott");
 	}
 	public boolean setIgloo(boolean b) {
 		System.out.println("IceCell.setIgloo meghívódott");
+		return false;
 	}
 	public abstract void accept(Character ch);
 	public abstract void snowing();

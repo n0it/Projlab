@@ -16,5 +16,6 @@ public class EssentialItem implements Items {
 	}
 	public boolean equip(Character ch) {
 		System.out.println("EssentialItem.equip meghívódott");
+		return false;
 	}
 }

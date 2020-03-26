@@ -22,6 +22,7 @@ public class StableIceCell extends IceCell  {
 	}
 	public boolean setIgloo(boolean b) {
 		System.out.println("StableIceCell.setIgloo meghívódott");
+		return false;
 	}
 
 	public void snowing() {

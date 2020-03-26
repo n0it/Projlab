@@ -10,6 +10,7 @@ public class WaterCell extends IceCell {
 
 	public int getIgloo(){
 		System.out.println("WaterCell.getIgloo meghívódott");
+		return 0;
 	}
 
 	public WaterCell(){
@@ -25,6 +26,8 @@ public class WaterCell extends IceCell {
 		other.setFacingWay(from);
 		other.move();
 		other.resetTurnsInWater();
+
+		return false;
 	}
 
 	public void snowing() {

@@ -10,5 +10,6 @@ public class Food implements Items {
 	}
 	public boolean equip(Character ch) {
 		System.out.println("Food.equip meghívódott");
+		return false;
 	}
 }

@@ -33,21 +33,21 @@ public class Main {
         System.out.println("12. Hóvihar");
         System.out.println("13. Játék vége egy játékos életerejének elfogyása miatt");
         Scanner actionScan = new Scanner(System.in);
-        String ac = actionScan.nextLine();
+        int ac = actionScan.nextInt();
         switch(ac) {
-            case "1" :   break;
-            case "2":  break;
-            case "3":  break;
-            case "4" :  break;
-            case "5" :  break;
-            case "6" :  break;
-            case "7":  break;
-            case "8" :  break;
-            case "9" :  break;
-            case "10" :  break;
-            case "11" :  break;
-            case "12" :  break;
-            case "13" :  break;
+            case 1 : break;
+            case 2:  break;
+            case 3:  break;
+            case 4 : break;
+            case 5 : break;
+            case 6 : break;
+            case 7:  break;
+            case 8 : break;
+            case 9 : break;
+            case 10 : break;
+            case 11 : break;
+            case 12 : break;
+            case 13 : break;
             default : System.out.println("Nincs ilyen opció!"); break;
         }
 

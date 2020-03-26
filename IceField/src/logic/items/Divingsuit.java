@@ -10,6 +10,7 @@ public class Divingsuit implements Items {
 	}
 	public boolean equip(Character ch) {
 		System.out.println("Divingsuit.equip meghívódott");
+		return false;
 	}
 
 }
