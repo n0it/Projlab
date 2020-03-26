@@ -9,7 +9,6 @@ import logic.icecells.WaterCell;
 import logic.items.PlayerActions;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class Main {
 
     public static void SaveWithRope() {
@@ -51,5 +50,6 @@ public class Main {
             case "13" :  break;
             default : System.out.println("Nincs ilyen opció!"); break;
         }
+
     }
 }

@@ -4,10 +4,9 @@ import logic.icecells.IceCell;
 
 public class Eskimo extends Character {
 
-	public Eskimo(){
-
-	}
+	public Eskimo(){ }
 	public void ability() {
 		System.out.println("Character.ability meghívódott");
+		getOwnCell().setIgloo(true);
 	}
 }

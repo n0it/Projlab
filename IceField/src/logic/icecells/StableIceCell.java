@@ -3,11 +3,11 @@ package logic.icecells;
 import logic.IceField;
 import logic.characters.Character;
 import logic.items.Items;
+import logic.items.Rope;
 
 public class StableIceCell extends IceCell  {
 	private boolean hasIgloo = false;
 	private Items item;
-
 
 	public StableIceCell(){ }
 
@@ -16,6 +16,9 @@ public class StableIceCell extends IceCell  {
 	}
 	public void mine(Character ch) {
 		System.out.println("StableIceCell.mine meghívódott");
+		item = new Rope();
+		item.equip(ch);
+		removeItem();
 	}
 	public boolean setIgloo(boolean b) {
 		System.out.println("StableIceCell.setIgloo meghívódott");
@@ -26,5 +29,7 @@ public class StableIceCell extends IceCell  {
 	}
 	public void accept(Character ch) {
 		System.out.println("StableIceCell.accept meghívódott");
+		addCharacter(ch);
+		ch.setOwnCell(this);
 	}
 }

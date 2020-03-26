@@ -12,5 +12,6 @@ public class WinChecker {
 	}
 	public boolean isAssembled() {
 		System.out.println("WinChecker.isAssembled meghívódott");
+		return true;
 	}
 }

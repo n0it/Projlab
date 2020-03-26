@@ -10,4 +10,8 @@ public class Explorer extends Character {
 	}
 	public void ability() {
 		System.out.println("Character.ability meghívódott");
+		IceCell ic = getOwnCell();
+		Way w = getFacingWay();
+		IceCell neighbour = ic.getNeighbour(w);
+		neighbour.setCapacityKnown();
 	}

@@ -33,6 +33,7 @@ public abstract class IceCell {
 	}
 	public IceCell getNeighbour(Way w) {
 		System.out.println("IceCell.getNeighbour meghívódott");
+		return new StableIceCell();
 	}
 	public void addNeighbour(Way w, IceCell ic) {
 		System.out.println("IceCell.addNeighbour meghívódott");

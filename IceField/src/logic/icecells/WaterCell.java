@@ -22,7 +22,7 @@ public class WaterCell extends IceCell {
 	public boolean movePlayerOut(Way from) {
 		System.out.println("WaterCell.movePlayerOut meghívódott");
 		Character other = new Explorer();
-		other.setFacingWay(w opposite);
+		other.setFacingWay(from);
 		other.move();
 		other.resetTurnsInWater();
 	}
@@ -32,5 +32,10 @@ public class WaterCell extends IceCell {
 	}
 	public void accept(Character ch) {
 		System.out.println("WaterCell.accept meghívódott");
+		System.out.println("WaterCell.accept meghívódott");
+		addCharacter(ch);
+		ch.addOneTurnInWater();
+		ch.setOwnCell(this);
+		setBroken();
 	}
 }
